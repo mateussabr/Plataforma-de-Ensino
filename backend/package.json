@@ -1,0 +1,22 @@
+{
+  "name": "plataforma-de-ensino",
+  "version": "1.0.0",
+  "description": "Plataforma de ensino para aprendizado online.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateussabr/Plataforma-de-Ensino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateussabr/Plataforma-de-Ensino/issues"
+  },
+  "homepage": "https://github.com/mateussabr/Plataforma-de-Ensino#readme"
+}
