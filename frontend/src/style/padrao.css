@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo: #2a303e;
+    --cor-primaria: #f13a3c;
+    --cor-secundaria: #454df6;
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth; 
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: 500;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: var(--cor-fundo);
+    color: white;
+    line-height: 1.6;
+}
+
+section{
+    padding-top: 5rem;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+
+}
+
+h1{
+    font-size: 4.122rem;
+    line-height: 1;
+}
+
+h2{
+    font-size: 3.488rem;
+    line-height: 1.2;
+}
+
+
+p#nome-pagina{
+    font-weight: bold;
+    font-size: 2.074rem;
+}
+
+p, li, a{
+    font-size: 1.728rem;
+    line-height: 1.7;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+a.botao{
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 10px 1px #454ef699;
+    border: 0.1rem solid var(--cor-secundaria);
+    transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+a.botao.inverso{
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 10px 1px #f13a3d99;
+    border: 0.1rem solid var(--cor-primaria);
+}
+
+a.botao.inverso:hover{
+    background-color: transparent;
+    box-shadow: none ;
+    color: var(--cor-primaria);
+}

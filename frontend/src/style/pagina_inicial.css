@@ -1,0 +1,62 @@
+header{
+    position: sticky;
+    z-index: 1000;
+    padding: 1.728rem;
+}
+
+nav{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 10rem;
+}
+
+.descricao{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.adicional{
+    background-color: #202832;
+    padding: 0.5rem 1rem;
+}
+
+.titulo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.titulo h1 {
+    display: inline-block; 
+    max-width: 100%;
+}
+
+.titulo p {
+    display: inline-block; 
+    width: fit-content;
+    word-wrap: break-word;
+}
+
+li {
+    display: inline-block;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 0; 
+    background-color: var(--cor-secundaria);
+    height: 0.2rem;
+    transition: width 0.3s ease; 
+}
+
+li a:hover::after {
+    width: 100%; 
+}
