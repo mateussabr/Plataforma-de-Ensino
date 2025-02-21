@@ -49,14 +49,16 @@ li {
 li a::after {
     content: '';
     position: absolute;
-    left: 0;
     bottom: -0.2rem;
-    width: 0; 
-    background-color: var(--cor-secundaria);
+    left: 50%;
+    width: 0;
     height: 0.2rem;
-    transition: width 0.3s ease; 
+    background-color: var(--cor-secundaria);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
 }
 
 li a:hover::after {
-    width: 100%; 
+    width: 100%;
+    left: 50%;
 }
