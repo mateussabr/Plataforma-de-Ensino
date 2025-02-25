@@ -26,6 +26,45 @@ body {
     line-height: 1.6;
 }
 
+header{
+    position: sticky;
+    z-index: 1000;
+    padding: 1.728rem;
+}
+
+nav{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 10rem;
+}
+
+li {
+    display: inline-block;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    bottom: -0.2rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--cor-secundaria);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+li a:hover::after {
+    width: 100%;
+    left: 50%;
+}
+
+
 section{
     padding-top: 5rem;
 }
@@ -69,15 +108,15 @@ a.botao{
     text-align: center;
     background-color: var(--cor-secundaria);
     padding: 0.5rem 2rem;
-    border-radius: 3rem;
-    box-shadow: 0px 0px 10px 1px #454ef699;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 20px 5px #454ef699;
     border: 0.1rem solid var(--cor-secundaria);
     transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 a.botao.inverso{
     background-color: var(--cor-primaria);
-    box-shadow: 0px 0px 10px 1px #f13a3d99;
+    box-shadow: 0px 0px 20px 5px #f13a3d99;
     border: 0.1rem solid var(--cor-primaria);
 }
 

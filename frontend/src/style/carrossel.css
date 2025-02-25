@@ -1,10 +1,10 @@
-.carrosel{
+.carrossel{
     height: 50rem;
     width: 50%;
     position: relative;
 }
 
-.carrosel .lista{
+.carrossel .lista{
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     height: 80%;
 }
 
-.carrosel .lista .item{
+.carrossel .lista .item{
     position: absolute;
     left: 0;
     top: 0;
@@ -22,7 +22,7 @@
     font-size: 1.5rem;
 }
 
-.carrosel .lista .item img{
+.carrossel .lista .item img{
     width: 80%;
     position: absolute;
     right: 0;
@@ -30,19 +30,19 @@
     transform: translateY(50%);    
 }
 
-.carrosel .lista .item:nth-child(n + 4){
+.carrossel .lista .item:nth-child(n + 4){
     opacity: 0;
     pointer-events: none;
 }
 
-.carrosel .lista .item:nth-child(2){
+.carrossel .lista .item:nth-child(2){
     transform: translate(0 , 0 );
     filter: blur(0);
     z-index: 10;
     opacity: 1;
 }
 
-.carrosel .lista .item:nth-child(1){
+.carrossel .lista .item:nth-child(1){
     transform: translate(-100%, -5%) scale(1.5);
     filter: blur(3rem);
     z-index: 11;
@@ -50,7 +50,7 @@
     pointer-events: none;
 }
 
-.carrosel .lista .item:nth-child(3){
+.carrossel .lista .item:nth-child(3){
     transform: translate(-50%, -10%) scale(0.8);
     filter: blur(1rem);
     z-index: 9;

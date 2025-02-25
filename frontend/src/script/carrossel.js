@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const lista = document.querySelector(".carrosel .lista");
-    const items = document.querySelectorAll(".carrosel .lista .item");
+    const lista = document.querySelector(".carrossel .lista");
+    const items = document.querySelectorAll(".carrossel .lista .item");
     let index = 0;
     
     function atualizarCarrossel() {
