@@ -33,6 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         atualizarCarrossel();
     }
     
-    setInterval(avancarCarrossel, 3000);
+    setInterval(avancarCarrossel, 2500);
     atualizarCarrossel();
 });

@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 8rem;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.qrcode {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+img {
+    width: 25rem;
+}
+
+p.descricao {
+    text-align: center;
+}
